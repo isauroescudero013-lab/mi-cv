@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<header class="header tech-header">
+    <div class="profile-tech">
+        <div class="photo-frame">
+            <img src="isauro2.jpg" alt="Isauro Noe Corona Escudero">
+        </div>
+
+        <div class="profile-info">
+            <h1>Isauro Noe <span>Corona Escudero</span></h1>
+            <h2>Estudiante en Sistemas y Logistica</h2>
+            <p class="tagline">Ciberseguridad · Redes · Desarrollo de Software</p>
+        </div>
+    </div>
+    <title>CV | Isauro Noe Corona Escudero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</header>
+<body>
+<div id="loader">
+    <div class="scanner"></div>
+    <p>Cargando perfil...</p>
+</div>
+<button id="theme-toggle">🌙</button>
+    <div class="container">
+        <section class="section reveal">
+
+            <h3>Objetivo Profesional</h3>
+            <p>
+                Ingeniero en Sistemas y Logística orientado a la optimización de procesos,
+                 análisis de datos y mejora continua, con el objetivo de aplicar soluciones tecnológicas y
+                 logísticas que incrementen la eficiencia operativa, reduzcan costos y fortalezcan la cadena de suministro.
+            </p>
+        </section>
+
+        <section class="section reveal">
+    <h3>Contacto</h3>
+    <div class="contact-icons">
+        <a href="https://wa.me/5215514705962" target="_blank" class="contact-item whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+</a>
+        <a href="mailto:isauroescudero013@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>isauroescudero013@gmail.com</span>
+        </a>
+        <a href="tel:5514705962" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>551 470 5962</span>
+        </a>
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Cuautitlán Izcalli, Méx.</span>
+        </div>
+    </div>
+</section>
+        <section class="section reveal">
+
+            <h3>Experiencia Laboral</h3>
+
+            <div class="card">
+                <h4>Operador de linea</h4>
+                <span>mar 2024 – Actualmente | Alsea s.a de c.v</span>
+                <ul>
+                    <li>Realiza ajustes, arranques y paradas de equipos según procedimientos.</li>
+                    <li>Verifica que los productos cumplan con los estándares antes de avanzar al siguiente paso o de ser entregados.</li>
+                    <li>Colabora en mantener la estación organizada, libre de riesgos, y con cumplimiento de normas de higiene y seguridad.</li>
+                    <li>Abastece las máquinas con insumos necesarios para que la producción o preparación de pedidos no se detenga.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Inspector de Control de Calidad</h4>
+                <span>Jun 2023 – 2024 | TecnoShock S.A. de C.V</span>
+                <ul>
+                    <li>Verificación y seguimiento de normas de calidad y seguridad.</li>
+                    <li>Participación en auditorías internas y externas.</li>
+                    <li>Control de registros e inspección en industria alimentaria.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Administrativo</h4>
+                <span>Oct 2021 – Sep 2023 | Estudios Superiores León Tolstoi</span>
+                <ul>
+                    <li>Gestión de trámites administrativos.</li>
+                    <li>Control de documentación.</li>
+                    <li>Redacción de informes y comunicaciones empresariales.</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section class="section reveal">
+            <h3>Educación</h3>
+
+            <div class="card">
+                <h4>Ingeniería en Sistemas y Logistica </h4>
+                <span>2026 – Actualmente | Instituto Universitario en Formacion Integral</span>
+            </div>
+
+            <div class="card">
+                <h4>Ingeniería en Sistemas Computacionales</h4>
+                <span>2023 – 2024 | Universidad Tres Culturas</span>
+            </div>
+
+            <div class="card">
+                <h4>Preparatoria</h4>
+                <span>2020 – 2023 | Unidad Educativa León Tolstoi</span>
+            </div>
+        </section>
+
+        <section class="section reveal">
+    <h3>Habilidades Técnicas</h3>
+
+    <div class="skill-bar">
+        <span>Programación</span>
+        <div class="bar">
+            <div class="progress" data-progress="80%"></div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Seguridad Informática</span>
+        <div class="bar">
+            <div class="progress" data-progress="75%"></div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Redes</span>
+        <div class="bar">
+            <div class="progress" data-progress="70%"></div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Programación Web</span>
+        <div class="bar">
+            <div class="progress" data-progress="85%"></div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>Paquetería Office</span>
+        <div class="bar">
+            <div class="progress" data-progress="100%"></div>
+        </div>
+    </div>
+</section>
+    </div>
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+
+        reveals.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const revealPoint = 100;
+
+            if (sectionTop < windowHeight - revealPoint) {
+                section.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+</script>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+        toggleBtn.textContent = 
+            document.body.classList.contains('light') ? '☀️' : '🌙';
+    });
+</script>
+<script>
+    const skillSections = document.querySelectorAll('.skill-bar .progress');
+
+    function animateSkills() {
+        skillSections.forEach(skill => {
+            const rect = skill.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                skill.style.width = skill.dataset.progress;
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateSkills);
+    animateSkills();
+</script>
+<script>
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            loader.style.pointerEvents = 'none';
+        }, 1200);
+    });
+</script>
+<a 
+  href="https://wa.me/5215514705962?text=Hola%20vi%20tu%20CV%20web%20y%20me%20gustaría%20contactarte"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Contactar por WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>
